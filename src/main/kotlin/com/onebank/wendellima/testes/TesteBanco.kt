@@ -8,7 +8,4 @@ fun main(){
     println(oneBank.nome)
     println(oneBank.numero)
 
-    val banco2 = oneBank.copy(nome = "Banco2")
-
-    println(Banco2.info())
 }

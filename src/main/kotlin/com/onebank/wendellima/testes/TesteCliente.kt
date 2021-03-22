@@ -9,7 +9,6 @@ fun main() {
         cpf  = "123.123.123-00",
         clienteTipo = ClienteTipo.PF,
         senha = "123456"
-
     )
 
     println(jose)
