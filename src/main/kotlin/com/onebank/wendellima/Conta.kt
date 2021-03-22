@@ -1,17 +1,34 @@
 package com.onebank.wendellima
 
-import java.math.BigDecimal
-
-class Conta {
-    //criar um contrutor primário
+/**
+ * Classe Conta
+ *
+ * Esta classe instancia objeto conta
+ *
+ * @property agencia Nome do agencia
+ * @property numero Numero da conta
+ * @property saldo valor do saldo
+ * @constructor cria um construtor com os atributos da classe
+ *
+ */
+class Conta (
     val agencia: String,
-    val nuemro: String,
-    val saldo: BigDecimal
-} {
-    fun deposito(valor: BigDecimal) {
+    val numero: String,
+    val saldo: Double
+
+) {
+    /**
+     * Função que deposita valores na conta
+     * @param valor valor esperado
+     */
+    fun deposito(valor: Double) {
 
     }
-    fun saque(valor: BigDecimal){
+    /**
+     * Função que saca valores da conta
+     * @param valor valor esperado
+     */
+    fun saque(valor: Double) {
 
     }
 }

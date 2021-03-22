@@ -1,13 +1,11 @@
 package com.onebank.wendellima
 
-import java.math.BigDecimal
-
-class Analista(
+abstract class Analista(
     nome:String,
     cpf:String,
-    salario:BigDecimal
+    salario:Double
 ) : Funcionario(nome, cpf, salario) {
-    override fun calculoAuxilio() {salario * 0,1
-        TODO("Not yet implemented")
-    }
+    //método a ser implementado para calcular o auxílio de funcionário
+    override fun calculoAuxilio(): Double = salario * 0.1
+
 }

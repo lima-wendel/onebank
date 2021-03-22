@@ -1,25 +1,16 @@
 
 package one.digitalinnovation.digionebank.testes
 
-import one.digitalinnovation.digionebank.Banco
+import com.onebank.wendellima.Funcionario
+import com.onebank.wendellima.Logavel
 
-/**
- * Classe TesteBanco
- *
- * Classe que instancia objeto tipo [Banco]
- */
+class Gerente (
+    nome: String,
+    cpf: String,
+    salario: Double,
+    val senha: String
+) : Funcionario(nome = nome, cpf = cpf, salario = salario), Logavel {
+    override fun calculoAuxilio(): Double = salario * 0.4
 
-fun main() {
-    //armazena na variável uma nova instancia da classe herdada Banco
-    val digiOneBank = Banco(nome = "Digione", numero = 5)
-
-    //mostra as informações
-    println(digiOneBank.nome)
-    println(digiOneBank.numero)
-
-    //aplicão quebrou Erro "Kotlin: Unresolved reference: copy"
-    //val banco2 = digiOneBank.copy(nome="banco2")
-
-    //println(banco2.info())
-
+    override fun login(): Boolean = "senha123" == senha
 }

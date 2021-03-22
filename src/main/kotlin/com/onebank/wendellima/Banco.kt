@@ -1,6 +1,6 @@
 package com.onebank.wendellima
 
-data class Banco(
+class Banco (
     val nome: String,
     val numero: Int
 ) {
